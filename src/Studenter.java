@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Studenter {
 
     //Instansvariabler
@@ -15,16 +17,14 @@ public class Studenter {
     }
 
     //Presentera
-    void presentera(){
-        System.out.println("\n---Studenter---");
-        System.out.println("Namn: "+namn);
-        System.out.println("Ålder: "+ålder);
-        System.out.println("Betyg: "+betyg);
-        System.out.println("Klass: "+klass);
+    public void presentera(){
+        System.out.println("\n---Student---");
+        System.out.println("Namn: "+namn+" | Ålder: "+ålder+" | Betyg: "+betyg+" | Klass: "+klass);
+
     }
 
-    //Byt namn
-    void bytaNamn(String nyttNamn){
+    //Byta namn
+    public void bytaNamn(String nyttNamn){
         namn=nyttNamn;
     }
 }

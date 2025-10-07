@@ -15,16 +15,13 @@ public class Vaktmästare {
     }
 
     //Presentera
-    void presentera(){
+    public void presentera(){
         System.out.println("\n---Vaktmästare---");
-        System.out.println("Namn: "+namn);
-        System.out.println("Ålder: "+ålder);
-        System.out.println("Avdelning: "+avdelning);
-        System.out.println("Lön: "+lön);
+        System.out.println("Namn: " + namn + " | Ålder: " + ålder + " | Avdelning: " + avdelning + " | Lön: " + lön);
     }
 
     //Byta namn
-    void bytaNamn(String nyttNamn) {
+    public void bytaNamn(String nyttNamn) {
         namn = nyttNamn;
     }
 }

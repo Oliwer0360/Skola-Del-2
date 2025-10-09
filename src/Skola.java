@@ -43,13 +43,36 @@ public class Skola {
     }
 
     public static void bytaNamn(Scanner input, ArrayList<Studenter> grupp1, ArrayList<Lärare> grupp2, ArrayList<Vaktmästare> grupp3){
-        System.out.println("Vem vill du byta namn på?" +
-                "\n1. Student" +
-                "\n2. Lärare" +
-                "\n3. Vaktmästare" +
-                "\nSkriv 1-3: ");
-        int gruppval = input.nextInt();
-        input.nextLine();
+
+        int personVal = 0; //Val av person, s1, l2, v3 osv
+
+        //While loopen kontrollerar så svaret är 1-3.
+        boolean rättSvar = false;
+        while (!rättSvar) {
+
+            System.out.println("Vem vill du byta namn på?" +
+                    "\n1. Student" +
+                    "\n2. Lärare" +
+                    "\n3. Vaktmästare" +
+                    "\nSkriv 1-3: ");
+            int gruppval = input.nextInt();
+            input.nextLine();
+
+            if (gruppval == 1) {
+                System.out.println("\nVilken student vill du byta namn på?");
+                personVal = input.nextInt();
+                if ()
+            }
+            else if (gruppval == 2) {
+
+            }
+            else if (gruppval == 3) {
+
+            }
+            else {
+                System.out.println("Ogilitgt svar! Försök igen.");
+            }
+        }
 
 
     }

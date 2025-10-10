@@ -40,11 +40,16 @@ public class Skola {
             Vaktmästare vaktmästare1 = vaktmästare.get(i);
             vaktmästare1.presentera();
         }
+
+        bytaNamn(input, studenter, lärare, vaktmästare);
+
     }
 
     public static void bytaNamn(Scanner input, ArrayList<Studenter> grupp1, ArrayList<Lärare> grupp2, ArrayList<Vaktmästare> grupp3){
 
         int personVal = 0; //Val av person, s1, l2, v3 osv
+        int i = 0;  //
+        String nyttNamn; //Nya namnet
 
         //While loopen kontrollerar så svaret är 1-3.
         boolean rättSvar = false;
@@ -59,9 +64,15 @@ public class Skola {
             input.nextLine();
 
             if (gruppval == 1) {
-                System.out.println("\nVilken student vill du byta namn på?");
+                System.out.println("\nVilken student vill du byta namn på? 1-3");
                 personVal = input.nextInt();
-                if ()
+                input.nextLine();
+
+                System.out.println("Vad ska det nya namnet vara?");
+                nyttNamn = input.nextLine();
+
+                nyttNamn = grupp1.get(personVal-1);
+
             }
             else if (gruppval == 2) {
 
